@@ -34,13 +34,12 @@ class MyHomeState extends StatelessWidget {
       appBar: AppBar(
         title: Text('Hi'),
       ),
-      body: Expanded(
-        child: ListView(children:
+      body: ListView(children:
             budilniks.map((budilnik){
               return BudilnikItem();
             }).toList(),
         ),
-      ),
-    );
+      );
+
   }
 }
