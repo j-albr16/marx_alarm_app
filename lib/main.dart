@@ -34,8 +34,7 @@ class MyHomeState extends StatelessWidget {
       appBar: AppBar(
         title: Text('Hi'),
       ),
-      body: Container(
-        color: Theme.of(context).primaryColor,
+      body: Expanded(
         child: ListView(children:
             budilniks.map((budilnik){
               return BudilnikItem();
